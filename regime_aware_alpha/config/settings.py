@@ -1,0 +1,9 @@
+# config/settings.py
+
+START_DATE = "2015-01-01"
+END_DATE = "2024-12-31"
+
+RISK_FREE_RATE_INDIA = 0.06
+TRADING_DAYS = 252
+
+DATA_FREQUENCY = "day"
