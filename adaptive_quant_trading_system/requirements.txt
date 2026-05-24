@@ -1,0 +1,8 @@
+pandas
+numpy
+matplotlib
+yfinance
+scipy
+pyyaml
+jinja2
+ta
