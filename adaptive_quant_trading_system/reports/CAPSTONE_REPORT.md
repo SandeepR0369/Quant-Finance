@@ -642,7 +642,14 @@ These are used by `src/backtest/engine.py` to save charts into `reports/output/`
 - More formal walk‑forward automation and sample-efficient hyperparameter search.
 
 ## Conclusion
-The codebase is intended for defensible academic experiments: clean plumbing, conservative execution assumptions, explicit risk controls, and repeatable outputs. It should be suitable for a capstone submission and follow-up development for more realistic execution or deployment experiments.
+
+This project helped me understand the complete workflow involved in building and testing an algorithmic trading system, starting from market data ingestion and indicator generation to execution simulation, portfolio management, and performance analysis.
+
+One of the biggest learnings from this project was that building a trading strategy is not only about generating signals. Data quality, transaction costs, execution assumptions, position sizing, and risk management had a major impact on overall performance and system stability. During testing, even small changes in stop-loss settings, volatility filters, or trade frequency produced noticeable differences in drawdown and long-term returns.
+
+The project also highlighted several practical engineering challenges such as handling inconsistent market data, debugging execution sequencing issues, and avoiding look-ahead bias in backtesting. Solving these issues improved the reliability and reproducibility of the overall system.
+
+Although the tested configuration underperformed during some market conditions, the implementation provided valuable insights into how systematic trading systems behave under realistic assumptions. The final system serves as a solid experimental framework for further strategy development, optimization, and future extensions such as paper trading or live broker integration.
 
 ## References
 - Code files referenced inline (see file list near the top).
